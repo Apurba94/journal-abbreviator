@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "journal-abbreviator"
+version = "0.1.0"
+description = "Abbreviate journal names using ISO 4 word rules and a customizable lookup table."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "JANIN A APURBA", email = "japurba97@gmail.com"}]
+keywords = ["research", "automation", "reproducibility", "academic"]
+dependencies = []
+
+[project.scripts]
+journal-abbreviator = "journal_abbreviator.cli:main"
+
+[tool.setuptools]
+packages = ["journal_abbreviator"]
